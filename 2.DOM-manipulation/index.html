@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-manipulation</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Список задач</h1>
+      <div class="filter">
+        <h3>Фильтр</h3>
+        <input type="checkbox" checked id="uncompleted">
+        <span>Невыполненные</span> <br>
+        <input type="checkbox" checked id="completed">
+        <span>Выполненные</span>
+      </div>
+      <form class="form">
+        <input class="input" type="text" placeholder="Введите задачу" required>
+        <button class="button" type="submit">Добавить</button>
+      </form>
+      <ul class="tasks_list"></ul>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
