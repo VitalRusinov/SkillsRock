@@ -19,6 +19,8 @@ function init() {
   const url = 'https://randomuser.me/api/?results=10';
 
   // Функция по заданию!!! Функция для запроса юзеров
+
+  //// !!!!!!!!!Не приходит ответ на запрос!!!!!!!!!!!
   function fetchRandomUsers() {
     elements.feedback.innerHTML = 'Загрузка...';
     fetch(url)

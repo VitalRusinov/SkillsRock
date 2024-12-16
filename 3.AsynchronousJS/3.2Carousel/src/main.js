@@ -52,7 +52,6 @@ function init() {
       img.src = imgSrc;
       addImgClass(img, index);
       elements.carousel.appendChild(img);
-      //Добавить prev при первом рендере
     });
   }
 
