@@ -57,7 +57,7 @@ function init() {
 
   // Смена изображения
   function changeImage(direction) {
-    state.currentIndex = (state.currentIndex + (direction === 'next' ? 1 : -1) + state.images.length) % state.images.length;
+    state.currentIndex = getIndex(state.currentIndex, direction, state.images.length);
     const imgs = elements.carousel.querySelectorAll('img');
     imgs.forEach((img, index) => {
       img.className = '';
